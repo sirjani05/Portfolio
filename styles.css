@@ -521,8 +521,6 @@ textarea {
 }
 
 .swiper-pagination{
-  border: 2px solid var(--border-color);
-  background-color: var(--container-color);
   opacity: 1;
   position: relative;
   z-index: 10;
