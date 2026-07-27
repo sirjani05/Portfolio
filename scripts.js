@@ -37,6 +37,14 @@ var servicesSwiper = new Swiper('.services-swiper', {
 });
 
 /* mixitup filter portfolio */
+var mixer = mixitup('.work-container', {
+    selectors: {
+        target: '.blog-item'
+    },
+    animation: {
+        duration: 300
+    }
+});
 
 /* active work */
 
