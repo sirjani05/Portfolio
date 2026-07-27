@@ -47,7 +47,7 @@ var mixer = mixitup('.work-container', {
 });
 
 /* active work */
-const linkWork = document.querySelector('.work-item');
+const linkWork = document.querySelectorAll('.work-item');
 
 function activeWork() {
   linkWork.forEach((a) => {
@@ -55,7 +55,7 @@ function activeWork() {
   });
 
   this.classList.add('active-work');
-};
+}
 
 linkWork.forEach((a) => a.addEventListener('click', activeWork));
 
