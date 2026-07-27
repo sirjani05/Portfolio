@@ -39,7 +39,7 @@ var servicesSwiper = new Swiper('.services-swiper', {
 /* mixitup filter portfolio */
 var mixer = mixitup('.work-container', {
     selectors: {
-        target: '.blog-item'
+        target: '.mix'
     },
     animation: {
         duration: 300
