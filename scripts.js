@@ -50,7 +50,7 @@ var mixer = mixitup('.work-container', {
 const linkWork = document.querySelector('.work-item');
 
 function activeWork() {
-  linkWork.forEach(() => {
+  linkWork.forEach((a) => {
     a.classList.remove('active-work');
   });
 
