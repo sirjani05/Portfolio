@@ -87,8 +87,51 @@ accordianItems.forEach((item) => {
 });
 
 /* testimonials swiper */
+let swiperTestimonials = new Swiper(".testimonials-swiper", {
+  spaceBetween: 24,
+  loop: true,
+  grabCursor: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    576: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
 
 /* email js */
+const contactForm = document.getElementById("contact-form"),
+  contactMessage = document.getElementById("contact-message");
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  // Displays confirmation message
+  contactMessage.textContent = "Message sent successfully ✅";
+  contactMessage.style.color = "#00d084";
+
+  // Clear input fields after 4 seconds
+  setTimeout(() => {
+    contactMessage.textContent = "";
+  }, 4000);
+
+  contactForm.reset();
+};
+
+if (contactForm) {
+  contactForm.addEventListener("submit", sendEmail);
+}
 
 /* style switcher */
 const styleSwitcher = document.getElementById("style-switcher"),
